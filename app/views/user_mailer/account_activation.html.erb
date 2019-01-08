@@ -1,0 +1,10 @@
+<h1>Diary App</h1>
+
+<p>こんにちは、 <%= @user.name %>さん</p>
+
+<p>
+「My Diary」へようこそ！　アカウントを有効にするためには下のリンクをクリックしてください。
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>
