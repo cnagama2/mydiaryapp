@@ -53,15 +53,8 @@ class UsersController < ApplicationController
                        :password_confirmation)
     end
     
-    #beforeアクション
+    #beforeフィルター
     
-    def logged_in_user
-      unless logged_in?
-      store_location
-      flash[:danger] = "ログインしてください"
-      redirect_to login_url
-      end
-    end
     
     #正しいユーザーかどうか確認
     def correct_user
