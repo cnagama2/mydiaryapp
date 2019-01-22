@@ -16,7 +16,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 section {
@@ -66,19 +66,36 @@ p {
 
 #logo {
   float: left;
+  padding-top: 0;
   margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  
+  display: block;
+  // width: 302px;
+  // height: 65px;
+  // font-size: 0;
+  // background: url(./assets/images/rails.png) left top/64px auto no-repeat;
+  // font-size: 1.7em;
+  // color: blue;
+  // text-transform: uppercase;
+  // letter-spacing: -1px;
+  // font-weight: bold;
 
   &:hover {
     color: #fff;
     text-decoration: none;
   }
 }
+
+/* jumbotron */
+
+ .jumbotron { 
+    background:url(flower_top.jpg) center no-repeat; background-size: cover;
+
+   h1 {
+    color: #008000;
+   }
+ }
+
 
 /* footer */
 
