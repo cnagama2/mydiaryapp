@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<br>
+
+<div class="d-flex align-items-center">
+  <h1><%= link_to '新規作成', new_diary_path, class: 'btn btn-outline-dark' %></h1> 
+</div>
+
+<table class="table table-hover diaries__table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">作成日時</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @diaries.each do |diary| %>
+    <tr>
+      <th scope="row"><%= link_to diary.body, diary %></th>
+      <td><%= diary.created_at.to_s(:datetime_jp) %></td>
+      <td><%= link_to '詳細', diary, class: 'btn btn-outline-dark' %></td>
+      <td><%= link_to '削除', diary, class: 'btn btn-outline-dark', method: :delete %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+

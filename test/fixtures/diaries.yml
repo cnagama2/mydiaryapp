@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  body: 今日はいい天気だった。親戚からミカンが送られてきた。いつもありがたい。
+
+two:
+  id: 2
+  body: 今日はお天気雨が降り、大きな虹を見ることができた。
